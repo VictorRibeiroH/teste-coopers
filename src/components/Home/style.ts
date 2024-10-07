@@ -3,7 +3,6 @@ import styled from "styled-components";
 import HeroIMG from "../../assets/bg.png";
 
 
-
 // Nav
 export const Header = styled.div`
   display: flex;
@@ -25,6 +24,7 @@ export const Button = styled.button`
   height: 40px;
   color: white;
   border: none;
+  cursor: pointer;
 `;
 
 
@@ -46,6 +46,10 @@ export const Section = styled.div`
 
 // Hero IMG
 export const Main = styled.div`
+
+  position: relative;
+  overflow: hidden;
+
   @media (min-width: 1160px) {
     background-image: url(${HeroIMG});
     background-repeat: no-repeat;
@@ -61,6 +65,7 @@ export const StyledH1 = styled.p`
   font-weight: 700;
   font-size: 80px;
   line-height: 80%;
+  margin-bottom: 20px;
   color: var(--primary-black);
 `;
 
