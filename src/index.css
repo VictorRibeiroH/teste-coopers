@@ -6,3 +6,33 @@
   --primary-grey: #999999;
   --cards-green: #42D76B;
 }
+
+/* Html */
+
+html {
+  transform: scale(1.33);
+  transform-origin: 0 0;
+  width: calc(100% / 1.33);
+  height: calc(100% / 1.33); 
+}
+
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-green); 
+  border-radius: 7px; 
+  border: 3px solid #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darken(var(--primary-green), 10%);
+}
