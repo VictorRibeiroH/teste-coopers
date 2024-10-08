@@ -1,15 +1,102 @@
-// import "" from './style';
+import {
+    Page,
+    Section,
+    Heading,
+    CardGrid,
+    Card,
+    CardDetails,
+    JobTag,
+    DescriptionText,
+    ReadMore,
+    Dot
+} from './style';
+
+import Slider1 from "../../assets/slider1.png"
+
+import FlexContainer from "../../utils/FlexContainer"
+import { useMemo, useState } from 'react';
+
 
 const GoodThings = () => {
+
+
+    const [step, setStep] = useState(0);
+    const cards = useMemo(() =>{
+        return [
+            [
+                {
+                    img: Slider1,
+                    text: 'Organize your daily job enhance your life performance'
+                },
+                {
+                    img: Slider1,
+                    text: 'Organize your daily job enhance your life performance'   
+                },
+                {
+                    img: Slider1,
+                    text: 'Organize your daily job enhance your life performance'
+                },
+            ],
+            [
+                {
+                    img: Slider1,
+                    text: '222222222222222'
+                },
+                {
+                    img: Slider1,
+                    text: '222222222222222'
+                },
+                {
+                    img: Slider1,
+                    text: '222222222222222'
+                },
+            ],
+            [
+                {
+                    img: Slider1,
+                    text: '3333333333333333'
+                },
+                {
+                    img: Slider1,
+                    text: '3333333333333333'
+                },
+                {
+                    img: Slider1,
+                    text: '3333333333333333'
+                },
+            ],
+        ]
+    }, [])
+
   return (
-    <div>
-        <div>
-            <h1>good things</h1>
-            <div>
-                
-            </div>
-        </div>
-    </div>
+    <Page>
+        <Section>
+            <Heading>good things</Heading>
+            <CardGrid>
+                {cards[step]?.map((card, idx) => (
+                    <Card key={idx}> 
+                        <img src={card.img}/>
+                        <CardDetails>
+                            <JobTag>
+                                function
+                            </JobTag>
+
+                            <DescriptionText>
+                                {card.text}
+                            </DescriptionText>
+
+                            <ReadMore>Read more</ReadMore>
+                        </CardDetails>
+                    </Card>
+                ))}
+            </CardGrid>
+            <FlexContainer jc="center" gap={20} mt="33px">
+                <Dot onClick={() => setStep(0)} color={!step ? "#4AC959" : ""}/>
+                <Dot onClick={() => setStep(1)} color={step === 1 ? "#4AC959" : ""}/>
+                <Dot onClick={() => setStep(2)} color={step === 2 ? "#4AC959" : ""}/>
+            </FlexContainer>
+        </Section>
+    </Page>
   )
 }
 

@@ -45,13 +45,6 @@ export const Box = styled.div`
   box-shadow: 0px 4px 60px rgba(66, 66, 66, 0.2);
 `
 
-export const Box1 = styled.div`
-  border-top: 20px solid #4AC959;
-  padding: 40px 38px 40px 23px;
-  width: 380px;
-  height: max-content;
-  box-shadow: 0px 4px 60px rgba(66, 66, 66, 0.2);
-`
 
 export const Text = styled.p`
   font-family: 'Montserrat';
@@ -113,6 +106,10 @@ export const Button = styled.button`
   line-height: 29px;
 
   color: #FFFFFF;
+
+
+  display: block;
+  margin: 0 16px; 
 `;
 
 export const Delete = styled.p`
