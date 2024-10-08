@@ -4,6 +4,7 @@ import TaskList from './components/TaskList'
 import ToDoList from './components/ToDoList'
 import GoodThings from './components/GoodsThings'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TaskList />
       <GoodThings />
       <Contact />
+      <Footer />
     </div>
   )
 }

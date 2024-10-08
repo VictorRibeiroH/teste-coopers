@@ -13,6 +13,14 @@ import Logo from "../../assets/Logo.png"
 import Hero from "../../assets/Hero.jpg"
 
 const Home = () => {
+
+    const scrollToTodo = () => {
+        const todoSection = document.getElementById('todo');
+        if (todoSection) {
+            todoSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
 
         <Main>
@@ -31,7 +39,7 @@ const Home = () => {
                     </header>
 
                     <StyledP>The only way to get things done</StyledP>   
-                    <ButtonToDo>Go to To-do list</ButtonToDo>
+                    <ButtonToDo onClick={scrollToTodo}>Go to To-do list</ButtonToDo>
 
                 </article>
 

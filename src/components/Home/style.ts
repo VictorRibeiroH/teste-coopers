@@ -103,4 +103,5 @@ export const ButtonToDo = styled.button`
   border-radius: 10px;
   width: 300px;
   height: 64px;
+  cursor: pointer;
 `;
