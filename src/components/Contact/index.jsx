@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div style={{ width: "48%" }}>
                     <Label htmlFor="telephone" mt="24px">Telephone*</Label>
-                    <Input id="telephone" type="tel" placeholder="example@example.com" />
+                    <Input id="telephone" type="tel" placeholder="(  ) ____-____" />
                 </div>
             </FlexContainer>
             <div>
