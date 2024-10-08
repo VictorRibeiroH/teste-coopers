@@ -12,6 +12,8 @@ import {
 } from './style';
 
 import Slider1 from "../../assets/slider1.png"
+import Slider2 from "../../assets/slider2.png"
+import Slider3 from "../../assets/slider3.png"
 
 import FlexContainer from "../../utils/FlexContainer"
 import { useMemo, useState } from 'react';
@@ -29,40 +31,40 @@ const GoodThings = () => {
                     text: 'Organize your daily job enhance your life performance'
                 },
                 {
-                    img: Slider1,
-                    text: 'Organize your daily job enhance your life performance'   
+                    img: Slider2,
+                    text: 'Mark one activity as done makes your brain understands the power of doing.'   
+                },
+                {
+                    img: Slider3,
+                    text: 'Careful with missunderstanding the difference between a list of things and a list of desires.'
+                },
+            ],
+            [
+                {
+                    img: Slider3,
+                    text: 'Careful with missunderstanding the difference between a list of things and a list of desires.'
                 },
                 {
                     img: Slider1,
                     text: 'Organize your daily job enhance your life performance'
                 },
-            ],
-            [
                 {
-                    img: Slider1,
-                    text: '222222222222222'
-                },
-                {
-                    img: Slider1,
-                    text: '222222222222222'
-                },
-                {
-                    img: Slider1,
-                    text: '222222222222222'
+                    img: Slider2,
+                    text: 'Mark one activity as done makes your brain understands the power of doing.'   
                 },
             ],
             [
                 {
-                    img: Slider1,
-                    text: '3333333333333333'
+                    img: Slider2,
+                    text: 'Mark one activity as done makes your brain understands the power of doing.'   
+                },
+                {
+                    img: Slider3,
+                    text: 'Careful with missunderstanding the difference between a list of things and a list of desires.'
                 },
                 {
                     img: Slider1,
-                    text: '3333333333333333'
-                },
-                {
-                    img: Slider1,
-                    text: '3333333333333333'
+                    text: 'Organize your daily job enhance your life performance'
                 },
             ],
         ]
@@ -85,7 +87,7 @@ const GoodThings = () => {
                                 {card.text}
                             </DescriptionText>
 
-                            <ReadMore>Read more</ReadMore>
+                            <ReadMore>read more</ReadMore>
                         </CardDetails>
                     </Card>
                 ))}
