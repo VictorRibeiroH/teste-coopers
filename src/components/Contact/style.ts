@@ -50,7 +50,7 @@ export const Label = styled.p<Props>`
 export const SendButton = styled.button`
   width: 100%;
   margin-top: 40px;
-  background: var(--primary-green);
+  background: var(--cards-green); 
   border-radius: 4px;
   font-family: 'Montserrat';
   font-style: normal;
