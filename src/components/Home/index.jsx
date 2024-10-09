@@ -6,7 +6,8 @@ import {
   StyledH2, 
   StyledP, 
   ButtonToDo, 
-  Main} 
+  Main,
+  Figure} 
 from "./style";
 
 import Logo from "../../assets/Logo.png"
@@ -44,9 +45,9 @@ const Home = () => {
                 </article>
 
                 {/* HeroIMG */}
-                <figure>
+                <Figure>
                     <img src={Hero} alt="HeroImage" style={{width: "100%"}}/>
-                </figure>
+                </Figure>
             </Section>
 
         </Main>

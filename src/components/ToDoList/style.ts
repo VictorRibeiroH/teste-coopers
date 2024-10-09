@@ -10,6 +10,8 @@ import BG1 from '../../assets/bg1.png'
 export const MainContainer = styled.main`
     width: 100%;
     position: relative;
+
+    
 `
 
 export const TaskTitle = styled.h1`
@@ -21,6 +23,10 @@ export const TaskTitle = styled.h1`
     width: max-content;
     margin: 0 auto;
     border-bottom: 2px solid var(--primary-green);
+
+    @media (max-width: 1159px) {
+        font-size: 2.4rem;
+}
 `
 
 export const TaskDescription = styled.p`
@@ -32,6 +38,11 @@ export const TaskDescription = styled.p`
     text-align: center;
     max-width: 37.5rem;
     margin: 2.5rem auto 0;
+
+
+    @media (max-width: 1159px) {
+        font-size: 1rem;
+}
 `
 
 export const TaskSection = styled.section`

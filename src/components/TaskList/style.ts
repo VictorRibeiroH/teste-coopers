@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import CHECK from '../../assets/check.png'
+import GRAF from '../../assets/graf.png'
 
 interface PropsStyle {
   color?: string;
@@ -15,12 +16,12 @@ export const Page = styled.div`
   justify-content: center;
   gap: 41px;
   flex-wrap: wrap;
+  margin-bottom: 10%;
   
   @media (min-width: 680px) {
-    background-image: url("/src/assets/image/ThirdPage/grafismos-lateral-esquerda.png");
+    background-image: url(${GRAF});
     background-repeat: no-repeat;
   }
-  /*background-position: center left;*/
   @media (max-width: 540px) {
     padding: 30px 5% 55px;
   }
@@ -110,6 +111,10 @@ export const Button = styled.button`
 
   display: block;
   margin: 0 16px; 
+
+   @media (max-width: 540px) {
+    width: 250px;
+  }
 `;
 
 export const Delete = styled.p`

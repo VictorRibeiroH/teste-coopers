@@ -13,7 +13,11 @@ export const Header = styled.div`
   background: transparent;
   
   @media (max-width: 540px) {
-    padding: 30px 5% 55px;
+    padding: 30px 10px 55px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 10px 55px;
   }
 `;
 
@@ -67,6 +71,10 @@ export const StyledH1 = styled.p`
   line-height: 80%;
   margin-bottom: 20px;
   color: var(--primary-black);
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const StyledH2 = styled.p`
@@ -77,6 +85,10 @@ export const StyledH2 = styled.p`
   line-height: 80%;
   margin-top: 5px;
   color: var(--primary-green);
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 export const StyledP = styled.p`
@@ -88,8 +100,21 @@ export const StyledP = styled.p`
   color: var(--primary-black);
   margin-top: 56px;
   margin-bottom: 61px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
+export const Figure = styled.div`
+@media (min-width: 1160px) {
+        display: block;
+}
+
+@media (max-width: 1159px) {
+        display: none;
+}
+`
 
 // Btn ToDo
 export const ButtonToDo = styled.button`
@@ -105,3 +130,4 @@ export const ButtonToDo = styled.button`
   height: 64px;
   cursor: pointer;
 `;
+
